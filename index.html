@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SK Technologies</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="icon" href="source/Sklogo.png" type="image/png" />
+  <meta name="description" content="SK Technologies offers innovative embedded systems, automation solutions, PCB design, and smart electronics development in Hyderabad, India." />
+<meta property="og:title" content="SK Technologies - Embedded Systems & Electronics Innovator" />
+<meta property="og:description" content="Explore our services in embedded design, automation, PCB assembly, and smart product development." />
+<meta property="og:image" content="sourece/Sklogo" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+  <!-- loading animation-->
+  <div id="loading-screen" style="position: fixed; width: 100vw; height: 100vh; background: #090364; display: flex; justify-content: center; align-items: center; z-index: 99999;">
+  <div class="spinner-border text-light" style="width: 3rem; height: 3rem;" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+
+  <!-- Navigation Bar --> 
+ <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top position-relative" style="overflow: visible;">
+  <div class="container-fluid position-relative" style="z-index: 1;">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="source/Sklogo.png" alt="SK Logo" />
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="#careers">Careers</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Scrolling Info Bar -->
+<div class="scrolling-info">
+  <div class="scrolling-text">
+    Now Hiring: Embedded Systems Engineer • PCB Design Engineer • Apply via careers@sktechnologies.co.in • Location: Hyderabad •
+  </div>
+</div>
+
+
+
+
+
+  <!-- Hero Section -->
+  <section id="home" class="hero" data-aos="fade">
+    <video autoplay muted loop playsinline>
+      <source src="source/backgroundvideo.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-content" data-aos="zoom-in">
+      <h1>Welcome to SK Technologies</h1>
+      <p class="fade-up">Innovating Embedded Systems & Smart Electronics for Tomorrow</p>
+      <a href="#services" class="btn btn-primary mt-3">Explore Services</a>
+      <a href="#contact" class="btn btn-secondary mt-3">Get in Touch</a>
+    </div>
+    <a href="#about" class="scroll-down"><i class="bi bi-chevron-double-down"></i></a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section-padding" data-aos="fade-up">
+    <div class="container text-center">
+      <h2 class="mb-4">About Us</h2>
+      <p class="lead">SK Technologies excels in Circuit Design, PCB Development, Embedded Systems, and Automation Solutions. We deliver innovation and reliability for the smart world of tomorrow.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+<section id="services" class="bg-light section-padding">
+  <div class="container text-center">
+    <h2 class="mb-4 fade-up">Our Services</h2>
+    <div class="d-flex justify-content-center flex-wrap">
+
+      <!-- Hardware Design -->
+      <div class="flip-card fade-up">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <i class="bi bi-cpu"></i>
+            <h4>Hardware Design</h4>
+            <p>Complete solutions from analog/digital design to embedded system development.</p>
+          </div>
+          <div class="flip-card-back">
+            <h4>Specializations</h4>
+            <ul>
+              <li data-description="Circuit design services offer the creation of both analog and digital circuits. Analog designs focus on continuous signals and components like resistors, capacitors, and transistors, used in applications like audio amplifiers and RF circuits. Digital designs, on the other hand, handle discrete signals, employing logic gates and flip-flops for systems like microprocessors and digital communication devices">Circuit & PCB Design</li>
+              <li data-description="the process of designing, creating, and maintaining the software that controls a hardware device's basic functions. This software, known as firmware, is typically stored in non-volatile memory like ROM or flash memory. It's responsible for initializing the device, managing low-level hardware operations, and enabling communication with other device.">Firmware Development</li>
+              <li data-description="A GUI (Graphical User Interface) and HMI (Human-Machine Interface) provide a visual interface for users to interact with and monitor a system, particularly in automation or control applications. While they are often used interchangeably, GUIs are generally more general-purpose, while HMIs are specifically designed for interacting with machines or processes. LabVIEW, a software platform for designing and building measurement and control systems, is frequently used to create HMIs. It allows for the creation of custom interfaces with interactive elements like buttons, sliders, and displays that communicate with a PLC (Programmable Logic Controller). The PLC controls the actual process based on the user's input through the HMI. Using a Linux-based system with LabVIEW can provide a flexible platform for building these interfaces, especially when coupled with a PLC for controlling machinery or processes">GUI/HMI Interfaces (Linux, LabVIEW, PLC)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Industrial Automation -->
+      <div class="flip-card fade-up">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <i class="bi bi-lightning-fill"></i>
+            <h4>Industrial Automation</h4>
+            <p>Scalable automation & control systems with IoT and real-time integration.</p>
+          </div>
+          <div class="flip-card-back">
+            <h4>Features</h4>
+            <ul>
+              <li data-description="Sensor and actuator integration combines devices that detect environmental changes with those that perform actions based on that data, enabling systems to respond intelligently to their surroundings. This integration is crucial for applications like robotics, smart homes, and industrial automation.">Sensor & Actuator Integration</li>
+              <li data-description="Machine retrofitting involves upgrading or modifying existing machines with new technology or features instead of replacing them entirely. It's a sustainable approach that can extend the lifespan of older equipment and improve its capabilities without significant upfront costs">Machine Retrofitting</li>
+              <li data-description="Remote monitoring via IoT involves using connected devices and sensors to collect data from remote locations or assets and transmit it to a central system for analysis and management. This enables real-time observation, proactive decision-making, and improved performance across various industries">Remote Monitoring & IoT</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Test Equipment Development -->
+      <div class="flip-card fade-up">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <i class="bi bi-wrench-adjustable"></i>
+            <h4>Test Equipment</h4>
+            <p>Automated solutions to validate functionality and compliance of electronics.</p>
+          </div>
+          <div class="flip-card-back">
+            <h4>Capabilities</h4>
+            <ul>
+              <li data-description="Automated test fixtures are specialized devices, often using robotics or mechanical operations, to automate testing processes. They are used in manufacturing and other industries to ensure the reliability and quality of products. By automating the test process, these fixtures can improve speed and consistency, reducing the need for human intervention and minimizing errors.">Automated Test Fixtures</li>
+              <li data-description="Visual pin mapping involves using pins on a map or map-like interface to represent and organize information about specific locations. These pins can be used to mark addresses, points of interest, or any data that has a geographic component. The main benefit of this approach is that it provides a simple and visual way to see how data is distributed across a geographical area.">Visual Pin Mapping</li>
+              <li data-description="Report generation is the process of creating structured documents that present data in an understandable format, often using specialized software called report generators. This process transforms raw data into actionable insights, helping businesses make informed decisions. Report generators can automate data extraction from databases, spreadsheets, or other sources, and they allow for customization of the report's layout and content.">Report Generation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- PCB Fabrication -->
+      <div class="flip-card fade-up">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <i class="bi bi-diagram-3-fill"></i>
+            <h4>PCB Fabrication</h4>
+            <p>High-quality boards with various stack-ups and surface finishes.</p>
+          </div>
+          <div class="flip-card-back">
+            <h4>Specifications</h4>
+            <ul>
+              <li data-description="Multi-layer PCB design, particularly those with 8+ layers, is crucial for complex circuit boards where space is limited and signal integrity is paramount. These boards utilize multiple conductive layers separated by insulating materials, allowing for dense routing, improved signal isolation, and better power distribution. 8-layer PCBs are common in high-speed applications where stringent EMI and impedance control are required.">Up to 8+ Layers</li>
+              <li data-description="ENIG (Electroless Nickel Immersion Gold) and HASL (Hot Air Solder Leveling) are both PCB surface finishes used to improve solderability and protect against corrosion. ENIG involves applying a thin layer of electroless nickel followed by a thin layer of immersion gold, offering good solderability, electrical properties, and oxidation resistance. HASL, on the other hand, involves dipping the PCB in molten solder and using hot air to level the surface, which can lead to an uneven coating and is more cost-effective but less suited for fine-pitch components">ENIG, HASL, Silver Finishes</li>
+              <li data-description="FR4 is a commonly used, relatively inexpensive, and strong composite material for printed circuit boards (PCBs), known for its flame retardant properties and excellent electrical insulation. Polyimide is another material used in PCBs, particularly flexible ones, and offers high heat resistance, flexibility, and mechanical strength. Aluminum PCBs, while not a material themselves, are constructed with aluminum cores and copper cladding for enhanced thermal management and mechanical strength.">FR4, Aluminium, Polyimide</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- PCB Assembly & Testing -->
+      <div class="flip-card fade-up">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <i class="bi bi-tools"></i>
+            <h4>PCB Assembly</h4>
+            <p>SMT, THT & Mixed Technology with FCT/ICT validation systems.</p>
+          </div>
+          <div class="flip-card-back">
+            <h4>Testing Options</h4>
+            <ul>
+              <li data-description="Surface Mount Technology (SMT) is a method of assembling electronic components directly onto the surface of a printed circuit board (PCB) instead of through holes. This approach has become the dominant method for building electronic devices due to its advantages over traditional through-hole technology.">Surface Mount Technology (SMT)</li>
+              <li data-description="Through-Hole Technology (THT) is a method of mounting electronic components on a printed circuit board (PCB) by inserting leads through holes and soldering them to pads on the opposite side. This technique is often used for components that require more mechanical strength or higher power ratings.">Through-Hole Technology (THT)</li>
+              <li data-description="Mixed Technology refers to the combination of both Surface Mount Technology (SMT) and Through-Hole Technology (THT) in a single PCB assembly. This approach allows for the advantages of both methods, enabling the use of high-density SMT components alongside robust THT components.">Mixed Technology</li>
+              <li data-description="Functional Testing (FCT) is a method of testing electronic devices to ensure they perform their intended functions. This type of testing typically involves applying power to the device and checking its outputs against expected results. FCT is crucial for verifying the performance and reliability of complex electronic systems.">Functional Testing (FCT)</li>
+              <li data-description="In-Circuit Testing (ICT) is a method used to test printed circuit boards (PCBs) and their components after assembly. It involves using a specialized test fixture to apply electrical signals to the PCB and measure the responses, allowing for the detection of manufacturing defects, incorrect component placements, and other issues.">In-Circuit Testing (ICT)</li>
+              <li data-description="Automated Optical Inspection (AOI) is a non-contact inspection method used in PCB assembly to detect defects such as misaligned components, soldering issues, and other manufacturing errors. AOI systems use high-resolution cameras and image processing algorithms to analyze the PCB and compare it against a known good reference.">Automated Optical Inspection (AOI)</li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Products Section -->
+   <section id="products" class="section-padding">
+  <div class="container text-center">
+    <h2 class="mb-4 fade-up">Our Products</h2>
+    <p class="lead fade-up">Explore innovative, precision-engineered products built to last.</p>
+    <div class="d-flex justify-content-center flex-wrap">
+
+      <!-- Water Controllers -->
+      <div class="flip-card fade-up">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <i class="bi bi-droplet-fill"></i>
+            <h4>Water Controllers</h4>
+            <p>Automatic control of sump and submersible motors.</p>
+          </div>
+          <div class="flip-card-back">
+            <h4>Types</h4>
+            <ul>
+              <li>
+                <a href="brochers/sump-type.html" target="_blank" class="brochure-link">
+                Sump Type <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+              </li>
+              <li data-description="A submersible pump controller is a device that manages the operation of a submersible pump, automating tasks and providing protection. It typically includes features like automatic startup/shutdown based on water levels, overload protection, and monitoring capabilities. Submersible pump controllers help ensure efficient water management and protect the pump from damage">Submersible Type</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Load Banks -->
+      <div class="flip-card fade-up"> 
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <i class="bi bi-lightbulb-fill"></i>
+            <h4>Load Banks</h4>
+            <p>For testing inverters, chargers, batteries & power supplies.</p>
+          </div>
+          <div class="flip-card-back">
+            <h4>Features</h4>
+            <ul>
+              <li data-description="A resistive load is an electrical load where the current and voltage are in phase, and the load primarily converts electrical energy into heat and Resistive banks for testing power supplies, inverters, batteries, and chargers">Resistive Loads</li>
+              <li data-description="A configurable load profile is a representation of how a system's resources are used over time, allowing for flexibility in how the system behaves under different workloads. It's essentially a model of the system's workload, and it can be adjusted or modified to simulate various scenarios or conditions.">Configurable Profiles</li>
+              <li data-description="Real-time monitoring in a load bank allows for constant observation of key parameters like voltage, current, power factor, and frequency during testing. This enables engineers to analyze the power source's performance in real-time, ensuring accurate data collection and efficient testing">Real-Time Monitoring</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stabilizers -->
+      <div class="flip-card fade-up">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <i class="bi bi-plug-fill"></i>
+            <h4>Voltage Stabilizers</h4>
+            <p>Stable and accurate voltage regulation solutions.</p>
+          </div>
+          <div class="flip-card-back">
+            <h4>Types</h4>
+            <ul>
+              <li data-description="Servo Voltage Stabilizers are devices that automatically adjust the voltage output to maintain a constant level, even when the input voltage fluctuates. They use a motor-driven variable transformer to achieve this, ensuring that sensitive equipment receives a stable voltage supply.">Servo Voltage Stabilizers</li>
+              <li data-description="Static Voltage Stabilizers are electronic devices that provide voltage regulation without moving parts. They use solid-state components to maintain a stable output voltage, making them suitable for applications where precision and reliability are critical.">Static Voltage Stabilizers</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Regulated PSUs -->
+      <div class="flip-card fade-up">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <i class="bi bi-battery-charging"></i>
+            <h4>Regulated PSUs</h4>
+            <p>designs and manufactures robust, precision-grade Linear Power Supply Units (PSUs) tailored for applications requiring ultra-low noise, high stability, and fast transient response.</p>
+          </div>
+          <div class="flip-card-back">
+            <div class="table-container">
+  <table class="psu-table">
+    <thead>
+      <tr>
+        <th>Model</th>
+        <th>Output Voltage</th>
+        <th>Output Current</th>
+        <th>Output Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>SKLPS-0505S</td>
+        <td>0–5V</td>
+        <td>0–5A</td>
+        <td>Single Output</td>
+      </tr>
+      <tr>
+        <td>SKLPS-3002S</td>
+        <td>0–30V</td>
+        <td>0–2A</td>
+        <td>Single Output</td>
+      </tr>
+      <tr>
+        <td>SKLPS-3002D</td>
+        <td>0–30V</td>
+        <td>0–2A × 2</td>
+        <td>Dual Output</td>
+      </tr>
+      <tr>
+        <td>SKLPS-3003D</td>
+        <td>0–30V</td>
+        <td>0–3A × 2</td>
+        <td>Dual Output + Fixed 5V/3A</td>
+      </tr>
+      <tr>
+        <td>Custom Model</td>
+        <td>Up to 100V</td>
+        <td>Up to 20A</td>
+        <td>Configurable</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+</div>
+</div>
+
+      <!-- LED Lighting -->
+<div class="flip-card fade-up">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <i class="bi bi-lightbulb"></i>
+      <h4>LED Lighting</h4>
+      <p>Energy-efficient and long-lasting lighting for industrial and residential use.</p>
+    </div>
+    <div class="flip-card-back">
+      <h4>Features</h4>
+      <ul>
+        <li data-description="High brightness, low power consumption LED modules designed for durability and thermal efficiency.">High-Efficiency Modules</li>
+        <li data-description="Options for waterproof and dustproof housing for industrial-grade lighting.">IP65/IP67 Rated Enclosures</li>
+        <li data-description="Smart lighting control via timers or IoT modules for energy saving.">Smart Control Options</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+      <!-- Cable Harness Tester -->
+      <div class="flip-card fade-up">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <i class="bi bi-diagram-3-fill"></i>
+            <h4>Cable Harness Tester</h4>
+            <p>designs and manufactures cable harness testing solutions to verify electrical connectivity, short circuits, and open lines in cable assemblies. Their testers are used in various industries like automotive, aerospace, and industrial control.</p>
+          </div>
+          <div class="flip-card-back">
+            <h4>Tests Performed</h4>
+            <ul>
+              <li data-description="Continuity testing, which is a form of low resistance measurement, determines if a circuit or connection is closed and capable of conducting electricity. Good continuity is indicated by a low resistance reading, while poor continuity shows a high resistance reading.">Continuity (Low Resistance Measurement)</li>
+              <li data-description="Insulation resistance testing is a method used to assess the quality of insulation material by measuring the resistance between two conducting surfaces. It helps identify potential problems like degradation, moisture, or contamination that can compromise the insulation's ability to safely conduct electricity.">Insulation Strength testing </li>
+              <li data-description="Data logging involves collecting and storing data over time, while report generation utilizes this data to create summaries and insights. These facilities are crucial for monitoring processes, identifying anomalies, and improving performance in various applications">Data logging and Report generation facility</li>
+              <li data-description="Custom fixture support and programmable configurations refer to designing and building specialized fixtures for manufacturing or testing that can be adjusted to meet specific needs. Fixtures are workholding devices that accurately and securely hold parts during operations like machining, testing, or assembly.">Custom fixture support and programmable configurations</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Elevator Control Units -->
+      <div class="flip-card fade-up">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <i class="bi bi-building"></i>
+            <h4>Elevator Control Units</h4>
+            <p>the design and development of high-performance Elevator Control Units (ECU), engineered to deliver efficient, reliable, and safe operation of elevator systems in both commercial and residential buildings.</p>
+          </div>
+          <div class="flip-card-back">
+            <h4>Features</h4>
+            <ul>
+              <li data-description="A microcontroller is a small, self-contained computer-on-a-chip designed to control specific devices or systems. It's like a mini-computer built into the device it controls, offering compact size, low power consumption, and the ability to perform specific tasks based on a programmed set of instructions">Microcontroller-Based</li>
+              <li data-description="IoT & Remote Monitoring allows real-time tracking and control of connected devices and systems from a remote location. This technology enables businesses and individuals to monitor equipment, environmental conditions, and operational performance without being physically present. By leveraging sensors and communication networks, data is collected, transmitted, and analyzed to provide valuable insights and facilitate proactive decision-making.">IoT & Remote Monitoring Ready</li>
+              <li data-description="Energy efficiency means using less energy to achieve the same outcome. It involves optimizing energy use in systems, devices, and processes to reduce waste and improve performance, while also lowering energy costs and environmental impact">Energy Efficient</li>
+              <li data-description="Integrated safety mechanisms refer to the combination of various safety systems and features designed to work together to prevent accidents and reduce their impact. These systems can be hardware-based, software-based, or a combination of both, and they aim to provide a holistic approach to safety">Integrated Safety Mechanisms</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Careers Section -->
+<section id="careers" class="section-padding bg-light">
+  <div class="container text-center">
+    <h2 class="mb-4">Join Our Team</h2>
+    <p class="lead">Explore current opportunities and grow with us.</p>
+
+    <div class="job-listings text-start mt-5">
+
+      <div class="job-posting mb-4 p-4 bg-white rounded shadow-sm">
+        <h4 class="fw-bold">Embedded Systems Engineer</h4>
+        <p><strong>Location:</strong> Hyderabad</p>
+        <p><strong>Experience:</strong> 2+ years</p>
+        <p><strong>Skills:</strong> C/C++, ARM, STM32, RTOS</p>
+        <p><strong>Details:</strong> Responsible for firmware development, testing, and hardware integration.</p>
+      </div>
+
+      <div class="job-posting mb-4 p-4 bg-white rounded shadow-sm">
+        <h4 class="fw-bold">PCB Design Engineer</h4>
+        <p><strong>Location:</strong> Hyderabad</p>
+        <p><strong>Experience:</strong> 1–3 years</p>
+        <p><strong>Skills:</strong> Altium, Eagle, KiCAD</p>
+        <p><strong>Details:</strong> Design multi-layer PCBs, work on schematics, and assist in prototype validation.</p>
+      </div>
+
+
+      <p class="mt-4">
+        To apply, email your resume to 
+        <a href="https://mail.google.com/mail/?view=cm&to=careers@sktechnologies.co.in" class="brochure-link">
+          careers@sktechnologies.co.in
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Contact -->
+  <section id="contact" class="section bg-light pt-5" data-aos="fade-up">
+    <div class="container text-center">
+      <h2 class="mb-4 fw-bold">Contact Us</h2>
+      <p class="lead mb-4">Have an idea? Let's build the future together!</p>
+      <div class="mb-3">
+        <i class="bi bi-geo-alt-fill text-danger me-2"></i>
+        <strong>Address:</strong><br>
+        #11-146/1/A, Patwari Enclave,<br>
+        Opp IDPL Colony, Balanagar,<br>
+        Hyderabad, Telangana – 500037
+      </div>
+      <div class="mb-3">
+        <i class="bi bi-telephone-fill text-primary me-2"></i>
+        <strong>Phone:</strong>
+        <a href="tel:+917032948938" class="text-decoration-none">7032948938</a>
+      </div>
+      <a href="https://mail.google.com/mail/?view=cm&to=support@sktechnologies.co.in" target="_blank" class="btn btn-primary btn-lg">
+        <i class="bi bi-envelope-fill"></i> Email Us
+      </a>
+
+      <!-- Google Map Embed -->
+      <div class="mt-5 mb-3 fade-up">
+        <iframe
+          title="Google Map - SK Technologies"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.4020903718483!2d78.44518687462913!3d17.488308999891007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb914e24da0bc9%3A0xbe9d8429cbe667a3!2sSK%20TECHNOLOGIES!5e0!3m2!1sen!2sin!4v1746510346151!5m2!1sen!2sin"
+          width="100%" 
+          height="300" 
+          style="border:0; border-radius: 10px;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      <div class="d-flex justify-content-center flex-wrap">
+
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center" data-aos="fade-up">
+    <p class="mb-0">&copy; 2025 SK Technologies. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Floating Popup -->
+  <div id="floating-popup" class="floating-popup hidden">
+  <div class="popup-content">
+    <span class="close-btn">&times;</span>
+    <h4 id="popup-title"></h4>
+    <p id="popup-desc"></p>
+  </div>
+</div>
+
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+  <button class="scroll-top" aria-label="Scroll to top">
+  <i class="bi bi-arrow-up-circle-fill"></i>
+</button>
+</body>
+</html>
