@@ -5,15 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SK Technologies</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  
+  <!-- External Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Meta Tags -->
   <link rel="icon" href="source/Sklogo.png" type="image/png" />
   <meta name="description" content="SK Technologies offers innovative embedded systems, automation solutions, PCB design, and smart electronics development in Hyderabad, India." />
-<meta property="og:title" content="SK Technologies - Embedded Systems & Electronics Innovator" />
-<meta property="og:description" content="Explore our services in embedded design, automation, PCB assembly, and smart product development." />
-<meta property="og:image" content="sourece/Sklogo" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="SK Technologies - Embedded Systems & Electronics Innovator" />
+  <meta property="og:description" content="Explore our services in embedded design, automation, PCB assembly, and smart product development." />
+  <meta property="og:image" content="source/Sklogo" />
 </head>
 <body>
   <!-- loading animation-->
@@ -43,7 +55,16 @@
         <li class="nav-item"><a class="nav-link" href="#careers">Careers</a></li>
         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-
+        <li class="nav-item dropdown theme-toggle">
+  <button class="btn nav-link dropdown-toggle d-flex align-items-center gap-1" type="button" id="themeDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+    <i id="themeIcon" class="bi bi-circle-half"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="themeDropdown">
+    <li><a class="dropdown-item theme-option" href="#" data-theme="light"><i class="bi bi-sun"></i> Light</a></li>
+    <li><a class="dropdown-item theme-option" href="#" data-theme="dark"><i class="bi bi-moon"></i> Dark</a></li>
+    <li><a class="dropdown-item theme-option" href="#" data-theme="auto"><i class="bi bi-circle-half"></i> Automatic</a></li>
+  </ul>
+</li>
       </ul>
     </div>
   </div>
@@ -52,7 +73,7 @@
 <!-- Scrolling Info Bar -->
 <div class="scrolling-info">
   <div class="scrolling-text">
-    Now Hiring: Embedded Systems Engineer • PCB Design Engineer • Apply via careers@sktechnologies.co.in • Location: Hyderabad •
+    Now Hiring: Embedded Systems Engineer • PCB Design Engineer • Apply via careers@sktechnologies.co.in • Location: Hyderabad •<a href="#careers" class="text-decoration-none text-white"> View Openings</a>
   </div>
 </div>
 
@@ -61,18 +82,29 @@
 
 
   <!-- Hero Section -->
-  <section id="home" class="hero" data-aos="fade">
-    <video autoplay muted loop playsinline>
-      <source src="source/backgroundvideo.mp4" type="video/mp4" />
-    </video>
-    <div class="hero-content" data-aos="zoom-in">
-      <h1>Welcome to SK Technologies</h1>
-      <p class="fade-up">Innovating Embedded Systems & Smart Electronics for Tomorrow</p>
-      <a href="#services" class="btn btn-primary mt-3">Explore Services</a>
-      <a href="#contact" class="btn btn-secondary mt-3">Get in Touch</a>
+<section id="home" class="hero position-relative overflow-hidden">
+  <!-- Background Video -->
+  <video autoplay muted loop class="hero-video">
+    <source src="source/backgroundvideo.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Glassy Overlay Content -->
+  <div class="hero-content text-white text-center position-relative z-2 animate__animated animate__fadeInDown">
+    <h1 class="display-3 fw-bold">Welcome to SK Technologies</h1>
+    <p class="lead mt-3">Innovating Embedded Systems & Smart Electronics for Tomorrow</p>
+    <div class="mt-4">
+      <a href="#services" class="btn btn-primary btn-lg me-2">Explore Services</a>
+      <a href="#contact" class="btn btn-outline-light btn-lg">Get in Touch</a>
     </div>
-    <a href="#about" class="scroll-down"><i class="bi bi-chevron-double-down"></i></a>
-  </section>
+  </div>
+
+  <!-- Scroll Down Indicator -->
+  <a href="#about" class="scroll-down position-absolute bottom-0 start-50 translate-middle-x pb-4 text-white animate__animated animate__bounce animate__infinite">
+    <i class="bi bi-chevron-double-down display-5"></i>
+  </a>
+</section>
+
 
   <!-- About -->
   <section id="about" class="section-padding" data-aos="fade-up">
@@ -88,24 +120,36 @@
     <h2 class="mb-4 fade-up">Our Services</h2>
     <div class="d-flex justify-content-center flex-wrap">
 
-      <!-- Hardware Design -->
-      <div class="flip-card fade-up">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <i class="bi bi-cpu"></i>
-            <h4>Hardware Design</h4>
-            <p>Complete solutions from analog/digital design to embedded system development.</p>
-          </div>
-          <div class="flip-card-back">
-            <h4>Specializations</h4>
-            <ul>
-              <li data-description="Circuit design services offer the creation of both analog and digital circuits. Analog designs focus on continuous signals and components like resistors, capacitors, and transistors, used in applications like audio amplifiers and RF circuits. Digital designs, on the other hand, handle discrete signals, employing logic gates and flip-flops for systems like microprocessors and digital communication devices">Circuit & PCB Design</li>
-              <li data-description="the process of designing, creating, and maintaining the software that controls a hardware device's basic functions. This software, known as firmware, is typically stored in non-volatile memory like ROM or flash memory. It's responsible for initializing the device, managing low-level hardware operations, and enabling communication with other device.">Firmware Development</li>
-              <li data-description="A GUI (Graphical User Interface) and HMI (Human-Machine Interface) provide a visual interface for users to interact with and monitor a system, particularly in automation or control applications. While they are often used interchangeably, GUIs are generally more general-purpose, while HMIs are specifically designed for interacting with machines or processes. LabVIEW, a software platform for designing and building measurement and control systems, is frequently used to create HMIs. It allows for the creation of custom interfaces with interactive elements like buttons, sliders, and displays that communicate with a PLC (Programmable Logic Controller). The PLC controls the actual process based on the user's input through the HMI. Using a Linux-based system with LabVIEW can provide a flexible platform for building these interfaces, especially when coupled with a PLC for controlling machinery or processes">GUI/HMI Interfaces (Linux, LabVIEW, PLC)</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+     <!-- Hardware Design with Lottie Animation -->
+<div class="flip-card fade-up">
+  <div class="flip-card-inner">
+    <!-- Front Side -->
+    <div class="flip-card-front text-center">
+      <i class="bi bi-cpu-fill"></i>
+
+
+      <h4>Hardware Design</h4>
+      <p>Complete solutions from analog/digital design to embedded system development.</p>
+    </div>
+
+    <!-- Back Side -->
+    <div class="flip-card-back">
+      <h4>Specializations</h4>
+      <ul>
+        <li data-description="Circuit design services offer the creation of both analog and digital circuits. Analog designs focus on continuous signals and components like resistors, capacitors, and transistors, used in applications like audio amplifiers and RF circuits. Digital designs, on the other hand, handle discrete signals, employing logic gates and flip-flops for systems like microprocessors and digital communication devices">
+          Circuit & PCB Design
+        </li>
+        <li data-description="Firmware development involves designing and programming low-level software stored in non-volatile memory that controls hardware behavior and interaction.">
+          Firmware Development
+        </li>
+        <li data-description="GUI/HMI interfaces provide visual tools for interacting with devices or systems. LabVIEW, Linux, and PLCs are commonly used for building customized operator panels.">
+          GUI/HMI Interfaces (Linux, LabVIEW, PLC)
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
 
       <!-- Industrial Automation -->
       <div class="flip-card fade-up">
@@ -208,11 +252,7 @@
           <div class="flip-card-back">
             <h4>Types</h4>
             <ul>
-              <li>
-                <a href="brochers/sump-type.html" target="_blank" class="brochure-link">
-                Sump Type <i class="bi bi-box-arrow-up-right"></i>
-                </a>
-              </li>
+              <li data-description="A sump pump controller is a device that manages the operation of a sump pump, automating tasks like starting and stopping the pump based on water levels. It typically includes features like float switches, alarms for high water levels, and monitoring capabilities to ensure efficient water management in basements or crawl spaces">Sump Type</li>
               <li data-description="A submersible pump controller is a device that manages the operation of a submersible pump, automating tasks and providing protection. It typically includes features like automatic startup/shutdown based on water levels, overload protection, and monitoring capabilities. Submersible pump controllers help ensure efficient water management and protect the pump from damage">Submersible Type</li>
             </ul>
           </div>
@@ -401,14 +441,41 @@
         <p><strong>Skills:</strong> Altium, Eagle, KiCAD</p>
         <p><strong>Details:</strong> Design multi-layer PCBs, work on schematics, and assist in prototype validation.</p>
       </div>
+      <form action="https://formspree.io/f/xdkzejzz" method="POST" enctype="multipart/form-data" class="text-start mx-auto" style="max-width: 600px;">
+  <div class="mb-3">
+    <label for="fullName" class="form-label">Full Name</label>
+    <input type="text" name="name" class="form-control" id="fullName" required>
+  </div>
 
+  <div class="mb-3">
+    <label for="email" class="form-label">Email Address</label>
+    <input type="email" name="_replyto" class="form-control" id="email" required>
+  </div>
 
-      <p class="mt-4">
-        To apply, email your resume to 
-        <a href="https://mail.google.com/mail/?view=cm&to=careers@sktechnologies.co.in" class="brochure-link">
-          careers@sktechnologies.co.in
-        </a>
-      </p>
+  <div class="mb-3">
+    <label for="role" class="form-label">Role Applying For</label>
+    <select name="position" class="form-control" required>
+      <option value="">Select Role</option>
+      <option>Embedded Systems Engineer</option>
+      <option>PCB Design Engineer</option>
+    </select>
+  </div>
+
+  <div class="mb-3">
+    <label for="experience" class="form-label">Experience (Years)</label>
+    <input type="number" name="experience" class="form-control" id="experience" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="resume" class="form-label">Upload Resume (PDF/DOC)</label>
+    <input type="file" name="resume" class="form-control" id="resume" accept=".pdf,.doc,.docx" required>
+  </div>
+
+  <button type="submit" class="btn btn-primary btn-lg">
+    <i class="bi bi-upload"></i> Submit Application
+  </button>
+</form>
+
     </div>
   </div>
 </section>
@@ -433,9 +500,32 @@
         <strong>Phone:</strong>
         <a href="tel:+917032948938" class="text-decoration-none">7032948938</a>
       </div>
-      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=support@sktechnologies.co.in&su=Support%20Needed&body=Hello%20Team," target="_blank" class="btn btn-primary btn-lg">
-  <i class="bi bi-envelope-fill"></i> Email Us via Gmail
-</a>
+      <form action="https://formspree.io/f/your-form-id" method="POST" class="text-start mx-auto" style="max-width: 600px;">
+  <div class="mb-3">
+    <label for="name" class="form-label">Full Name</label>
+    <input type="text" class="form-control" id="name" name="name" required>
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email Address</label>
+    <input type="email" class="form-control" id="email" name="email" required>
+  </div>
+  <div class="mb-3">
+    <label for="phone" class="form-label">Phone Number</label>
+    <input type="tel" class="form-control" id="phone" name="phone">
+  </div>
+  <div class="mb-3">
+    <label for="subject" class="form-label">Subject</label>
+    <input type="text" class="form-control" id="subject" name="subject" required>
+  </div>
+  <div class="mb-3">
+    <label for="message" class="form-label">Message</label>
+    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary btn-lg">
+    <i class="bi bi-envelope-fill"></i> Send Message
+  </button>
+</form>
+
 
 
       <!-- Google Map Embed -->
@@ -458,7 +548,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="text-center" data-aos="fade-up">
+  <footer >
     <p class="mb-0">&copy; 2025 SK Technologies. All Rights Reserved.</p>
   </footer>
 
@@ -472,14 +562,46 @@
 </div>
 
 
-  <!-- Scripts -->
-  <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 1000, once: true });
-  </script>
-  <button class="scroll-top" aria-label="Scroll to top">
-  <i class="bi bi-arrow-up-circle-fill"></i>
-</button>
+ <!-- Scripts -->
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+</script>
+<!-- Floating Button Group -->
+<div class="fab-group">
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/917032948938?text=Hi%20SK%20Technologies%2C%20I%20have%20a%20query."
+     class="fab whatsapp-btn" target="_blank" title="Chat on WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Scroll to Top -->
+  <button class="fab scroll-top" aria-label="Scroll to top" title="Scroll to Top">
+    <i class="bi bi-arrow-up-circle-fill"></i>
+  </button>
+
+  <!-- Chatbot Toggle -->
+  <button class="fab chatbot-toggle" id="openChat" title="Open Chatbot">
+    <i class="bi bi-robot"></i>
+  </button>
+</div>
+
+<!-- Chatbot -->
+<div class="chatbot-container" id="chatContainer">
+  <div class="chat-header">
+    <span>SK Assistant</span>
+    <button id="closeChat">&times;</button>
+  </div>
+  <div class="chat-body" id="chatBody">
+    <div class="chat-message bot">Hi! I'm SK Assistant. How can I help you today?</div>
+    <div class="chat-options">
+      <button class="chat-option">Our Products</button>
+      <button class="chat-option">Career Openings</button>
+      <button class="chat-option">Contact Info</button>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
